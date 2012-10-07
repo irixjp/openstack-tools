@@ -1,0 +1,14 @@
+HOST_IP=192.168.128.50
+ADMIN_PASSWORD=openstack
+MYSQL_PASSWORD=stackdb
+RABBIT_PASSWORD=stackqueue
+SERVICE_PASSWORD=$ADMIN_PASSWORD
+SERVICE_TOKEN=token
+
+disable_service n-net
+disable_service n-cpu
+enable_service q-svc
+enable_service q-agt
+enable_service q-dhcp
+enable_service q-l3
+
