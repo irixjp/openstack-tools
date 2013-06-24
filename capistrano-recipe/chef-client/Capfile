@@ -1,0 +1,4 @@
+require 'capistrano_colors'
+require 'capistrano/ext/multistage'
+
+load './config/default.rb'
